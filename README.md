@@ -1,4 +1,4 @@
-# 🧠 Semantic Vector Search API (FastAPI + Pinecone + EmbeddingGemma)
+#Semantic Vector Search API (FastAPI + Pinecone + EmbeddingGemma)
 
 This repository contains a production-ready, serverless Retrieval-Augmented Generation (RAG) backend that demonstrates the paradigm shift from traditional keyword matching (lexical search) to conceptual matching (semantic search). 
 
@@ -6,7 +6,7 @@ Built using FastAPI, Google’s embeddinggemma-300m model, and a Pinecone vector
 
 ---
 
-## 🛠️ System Architecture & Workflow
+## System Architecture & Workflow
 
 The codebase is engineered around two distinct lifecycle pipelines:
 
@@ -26,7 +26,7 @@ A highly responsive FastAPI gateway serving production query traffic:
 
 ---
 
-## 📊 Core Concepts & Operational Engineering
+## Core Concepts & Operational Engineering
 
 Developing this pipeline highlights several foundational concepts governing vector search and retrieval infrastructure:
 
@@ -56,7 +56,7 @@ An intentionally configured chunk overlap (e.g., 20 characters) functions as str
 
 ---
 
-## 💡 Key Technical Lessons (Production Gotchas)
+## Key Technical Lessons (Production Gotchas)
 
 * Global Model Warmup: Instantiating deep learning models inside an active HTTP route handler forces the server to reload weights on every request, causing severe response lag. Storing the initialized model object globally and warming it up via an explicit application startup event keeps search endpoints instantaneous.
 * Gated Weights Authentication: Leading open-weights models are gated on Hugging Face. Running default repository initialization blocks results in immediate 401 Unauthorized exceptions. Code must securely map local environment access tokens to authenticate programmatically with the remote model registry.
@@ -66,7 +66,7 @@ An intentionally configured chunk overlap (e.g., 20 characters) functions as str
 
 ---
 
-## ⚙️ Local Deployment & Configuration
+## Local Deployment & Configuration
 
 ### 1. Environment Keys
 Create a `.env` file in your root workspace. Ensure there are no spaces flanking the assignment operators:

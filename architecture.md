@@ -1,4 +1,4 @@
-# 🚀 Building a Semantic Search API: From Keyword Matching to Vector Magic
+# Building a Semantic Search API: From Keyword Matching to Vector Magic
 
 If you have ever been frustrated by a search bar that says "No results found" just because you used a synonym, you understand the limitations of traditional databases. We have spent decades relying on "Ctrl+F" keyword matching (Lexical Search). 
 
