@@ -1,8 +1,7 @@
 # Semantic Vector Search API (FastAPI + Pinecone + EmbeddingGemma)
 
-This repository contains a production-ready, serverless Retrieval-Augmented Generation (RAG) backend that demonstrates the paradigm shift from traditional keyword matching (lexical search) to conceptual matching (semantic search). 
-
-Built using FastAPI, Google’s embeddinggemma-300m model, and a Pinecone vector database, this system transforms raw, unstructured data into a mathematically indexed knowledge base capable of answering deep architectural and operational questions.
+This repository explores the mechanics of a serverless Retrieval-Augmented Generation (RAG) backend. Built using FastAPI, Google’s embeddinggemma-300m model, and a Pinecone vector database, this project demonstrates how to transform unstructured data into a semantically searchable knowledge base. 
+Note: This codebase is a work-in-progress and is intended for educational purposes and architectural experimentation.
 
 ---
 
